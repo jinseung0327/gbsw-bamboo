@@ -35,39 +35,7 @@
         <br />
         강 한
       </a>
-    </td>
-     <td align="center">
-      <a href="https://github.com/806gw">
-        <img src="https://avatars.githubusercontent.com/806gw" width="100px" height="100px" />
-        <br />
-        성홍제
-      </a>
-    </td>
-     <td align="center">
-      <a href="https://github.com/dya-only">
-        <img src="https://avatars.githubusercontent.com/dya-only" width="100px" height="100px" />
-        <br />
-        손보석
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/jinseung0327">
-        <img src="https://avatars.githubusercontent.com/jinseung0327" width="100px" height="100px" />
-        <br />
-        유진승
-      </a>
-    </td>
-  </tr>
-</table>
-</div>
-
-## Frontend 강한, 성홍제 
-#### 강한 : 웹퍼블리싱 및 무한스크롤, 신고기능
-#### 성홍제 : 프론트엔드, 백엔드 연동 및 자세히보기 기능
-</br>
-
-## Backend 최한울, 김승환 
-#### 최한울 : CRUD 게시물 지우기 및 가져오
+  기
 #### 김승환 : 신고 기능 및 데이터베이스 
 </br>
 
