@@ -11,8 +11,8 @@
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
   
 </div>
-
-<h3>Backend</h3>
+</br>
+<div display="flex">
 <table>
   <tr>
     <td align="center">
@@ -29,33 +29,21 @@
         최한울
       </a>
     </td>
-  </tr>
-</table>
-
-<h3>Frontend</h3>
-<table>
-  <tr>
-    <td align="center">
+     <td align="center">
       <a href="https://github.com/L4VEN">
         <img src="https://avatars.githubusercontent.com/L4VEN" width="100px" height="100px" />
         <br />
         강 한
       </a>
     </td>
-    <td align="center">
+     <td align="center">
       <a href="https://github.com/806gw">
         <img src="https://avatars.githubusercontent.com/806gw" width="100px" height="100px" />
         <br />
         성홍제
       </a>
     </td>
-  </tr>
-</table>
-
-<h3>Helped</h3>
-<table>
-  <tr>
-    <td align="center">
+     <td align="center">
       <a href="https://github.com/dya-only">
         <img src="https://avatars.githubusercontent.com/dya-only" width="100px" height="100px" />
         <br />
@@ -71,5 +59,17 @@
     </td>
   </tr>
 </table>
+</div>
 
+## Frontend 강한, 성홍제 
+#### 강한 : 웹퍼블리싱 및 무한스크롤, 신고기능
+#### 성홍제 : 프론트엔드, 백엔드 연동 및 자세히보기 기능
+</br>
+
+## Backend 최한울, 김승환 
+#### 최한울 : CRUD 게시물 지우기 및 가져오
+#### 김승환 : 신고 기능 및 데이터베이스 
+</br>
+
+## Helped  유진승, 손보석
 </div>
