@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: back
+      MYSQL_DATABASE: back
+      MYSQL_USER: back
+      MYSQL_PASSWORD: back

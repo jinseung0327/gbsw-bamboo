@@ -1,0 +1,341 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+  font-family: "Pretendard";
+  box-sizing: border-box;
+  transition: all 0.1s ease;
+}
+
+header {
+  a {
+    all: unset;
+  }
+  div,
+  h3 {
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    font-weight: 600;
+    div {
+      font-size: 24px;
+      font-weight: 800;
+    }
+  }
+  .theme-btn {
+    color: #69aae7;
+  }
+}
+
+body {
+  margin: 0 auto;
+  // background-color: #e3e5eb;
+  background-color: #202124;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #6e7b95;
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+    opacity: 0;
+  }
+}
+
+.background {
+  transition: background-color 0.25s ease;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e3e5eb;
+  z-index: -100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  &.dark-theme {
+    background-color: #202124;
+    color: #fff;
+  }
+}
+#root {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  &.dark-theme {
+    color: #eeeff3;
+  }
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+//form 컨테이너
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #eeeff3;
+  box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+  gap: 10px;
+  &.dark-theme {
+    background-color: #38393e;
+  }
+  *:not(.input-container, .submit-check) {
+    background-color: #d5e3ed;
+    color: #111;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    &.dark-theme {
+      background-color: #151515;
+      color: #fff;
+      option {
+        background-color: #151515;
+        color: #fff;
+      }
+    }
+  }
+  button {
+    all: unset;
+    font-size: 14px;
+    background-color: #151515;
+    color: #fff;
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.25s ease;
+    margin-right: 8px;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(2px);
+      background-color: rgb(198, 215, 237);
+    }
+    &.dark-theme {
+      &:hover {
+        background-color: #303030;
+      }
+    }
+  }
+  textarea {
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #8a9bbc;
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+      opacity: 0;
+    }
+    border: none;
+    resize: none;
+    outline: none;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  input {
+    width: 100%;
+    min-width: 100px;
+  }
+  select {
+    text-align: center;
+    width: 100px;
+    min-width: 100px;
+    height: 100%;
+  }
+}
+
+.report-btn {
+  background-color: transparent !important;
+  color: #3b86cd !important;
+}
+
+.report-input-container {
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: start;
+  justify-content: center;
+  background-color: #fff;
+  width: 90%;
+  max-width: 700px;
+  height: 18 0px;
+  position: absolute;
+  box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.1);
+  border: 1px solid #151515;
+  flex-direction: column;
+  gap: 15px;
+  &.dark-theme {
+    background-color: #38393e;
+    color: #fff;
+    border: 1px solid #aaa;
+  }
+  span {
+    text-align: start;
+  }
+  input {
+    width: 100%;
+    background-color: #d5e3ed;
+    color: #111;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    &.dark-theme {
+      background-color: #151515;
+      color: #fff;
+    }
+  }
+  div {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    button {
+      all: unset;
+      font-size: 14px;
+      height: 20px;
+      text-align: center;
+      transition: all 0.25s ease;
+      width: 100px;
+      background-color: #d5e3ed;
+      color: #111;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      &:hover {
+        transform: translateY(2px);
+        background-color: rgb(198, 215, 237);
+      }
+      &.dark-theme {
+        background-color: #151515;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.submit-check {
+  font-size: 14px;
+  color: green;
+  line-height: 30px;
+}
+
+//제보 컨테이너
+.report-container {
+  margin: 15px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #eeeff3;
+  box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  *:not(.report-tag) {
+    line-height: 30px;
+  }
+  &.dark-theme {
+    // background-color: #38393e;
+    background-color: #38393e;
+    color: #fff;
+  }
+}
+.report-id {
+  color: #3b86cd;
+}
+.report-date {
+  font-size: 14px;
+  color: #808080;
+  font-weight: 300;
+}
+.report-text {
+  font-size: 16px;
+  font-weight: 400;
+  display: inline;
+}
+.report-tag {
+  margin-top: 10px;
+  font-size: 12px;
+  background-color: #d5e3ed;
+  color: #0067c7;
+  width: 50px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 300;
+  border-radius: 5px;
+  &.dark-theme {
+    background-color: #151515;
+    color: #fff;
+  }
+}
+
+.report-about {
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.report-about:hover {
+  cursor: pointer;
+  color: #0067c7;
+}
+
+.gbsw-logo {
+  width: 60px;
+  position: absolute;
+  margin-left: 128px;
+  margin-top: -10px;
+}
+
+@media only screen and (min-width: 800px) {
+  .inner {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .input-container {
+    flex-direction: column;
+  }
+}
