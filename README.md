@@ -1,8 +1,7 @@
 <div align="center"> 
-  
-## 경북소프트웨어고등학교 대나무숲
+<img src="https://github.com/806gw/gbsw-bamboo/assets/133763382/4baadf7b-f522-4350-be9b-4fc442eddc02" width="100px" height="100px"/>
 
-
+### 경북소프트웨어고등학교 대나무숲
 <div>
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
   <img src="https://img.shields.io/badge/Nest.js-E0234E?style=flat-square&logo=nestjs&logoColor=white"/>
